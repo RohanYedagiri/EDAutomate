@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="{{ url_for('eda')}}" type="button" class="btn btn-primary" > Go to EDA</a>
+    {{ filename }}
+    <div class="container">
+        {{ df_table.to_html(classes='table table-striped table-hover', na_rep='-')|safe }}
+    </div>
+
+
+</body>
+</html>
